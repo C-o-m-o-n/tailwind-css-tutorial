@@ -1,4 +1,3 @@
-
 <!-- Tailwindcss is an opensuorce  css framwork, released in May 2019. -->
 <!-- does not provide predefined UI components such as cards and buttons, instead it provide low level utilty classes that let's you build custom designs within your html file -->
 
@@ -7,45 +6,126 @@
 -- node js
 -->
 
-
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-white" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="bg-white truncate">
+    <header>
+      <nav id="nav" class="bg-white absolute transition w-full duration-300 ease-in-out -left-[400px] md:relative md:left-0 flex flex-col md:flex-row items-center justify-between p-4">
+        <div class="h-8 w-8">
+          <img src="images/lebron-james.png" alt="logo" class="h-full w-full" />
+        </div>
 
-	<header>
-    <nav class="flex items-center justify-between p-4">
-      <div class="h-6 w-6">
-        <img src="images/CollinsOmondi-nobg.png" alt="logo" class="h-full w-full">
+        <div>
+          <ul class="flex flex-col md:flex-row  items-center">
+            <li
+              class="m-3 md:m-0 md:mx-3 md:border hover:border rounded-full py-2 px-4 hover:bg-[#f5edff] cursor-pointer transition hover:duration-300 ease-in-out"
+            >
+              About
+            </li>
+            <li
+              class="m-3 md:m-0 md:mx-3 md:border hover:border rounded-full py-2 px-4 hover:bg-[#f5edff] cursor-pointer transition hover:duration-300 ease-in-out"
+            >
+              Services
+            </li>
+            <li
+              class="m-3 md:m-0 md:mx-3 md:border hover:border rounded-full py-2 px-4 hover:bg-[#f5edff] cursor-pointer transition hover:duration-300 ease-in-out"
+            >
+              Projects
+            </li>
+            <li
+              class="m-3 md:m-0 md:mx-3 md:border hover:border rounded-full py-2 px-4 hover:bg-[#f5edff] cursor-pointer transition hover:duration-300 ease-in-out"
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <i id="menu-btn" class="absolute right-[20px] top-[20px]  md:hidden text-3xl text-[#8100f1] fa-solid fa-bars"></i>
+    </header>
+
+    <div
+      class="flex justify-center h-screen bg-[url('./images/abstract-white-bg.jpg')]"
+    >
+      <div class="flex ml-2 md:ml-28 items-center w-full md:w-[50%]">
+        <div class="md:ml-[20px]">
+          <p class="text-xl text-center md:text-left">
+            <span class="text-5xl text-center md:text-left font-bold"
+              >Building digital products, brands and
+              <span class="text-[#8100f1] flex items-center"
+                ><i
+                  class="text-xl bg-[#8100f1] text-white p-3 rounded-full fa-solid fa-pen-ruler"
+                ></i
+                >Experience.</span
+              >
+            </span>
+            A product Designer and visual developer based in Lagos, Nigeria. I
+            specilize in UI/UX design, user experience and interaction design.I
+            am also a front-end developer and a freelance designer. I am
+            passionate about creating beautiful and functional products that
+            help people achieve their goals.
+          </p>
+
+          <div class="my-[20px]">
+            <ul class="flex flex-auto flex-row gap-4 items-center">
+              <li
+                class="cursor-pointer transition hover:duration-150 ease-in-out rounded-full p-4 hover:bg-[#f5edff]"
+              >
+                <i class="text-3xl text-[#8100f1] fa-brands fa-linkedin"></i>
+              </li>
+              <li
+                class="cursor-pointer transition hover:duration-150 ease-in-out rounded-full p-4 hover:bg-[#f5edff]"
+              >
+                <i class="text-3xl text-[#8100f1] fa-solid fa-phone"></i>
+              </li>
+              <li
+                class="cursor-pointer transition hover:duration-300 ease-in-out rounded-full p-4 hover:bg-[#f5edff]"
+              >
+                <i class="text-3xl text-[#8100f1] fa-brands fa-github"></i>
+              </li>
+              <li
+                class="cursor-pointer transition hover:duration-700 ease-in-out rounded-full p-4 hover:bg-[#f5edff]"
+              >
+                <i class="text-3xl text-[#8100f1] fa-brands fa-x-twitter"></i>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <input
+              placeholder="Enter your email address"
+              class="items-center border border-2 rounded p-4 bg-[#f5edff]"
+            />
+            <button class="bg-[#8100f1] rounded p-4">
+              <span class="text-white">Contact me</span>
+            </button>
+          </div>
+        </div>
       </div>
-
-      
-      <div >
-        <ul class="flex flex-row justify-center gap-1 items-center">
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-
       <div>
-        <ul>
-          <li>
-            <img src="images/linkedin.svg" alt="">
-            <img src="images/contact.svg" alt="">
-            <img class="text-[]" src="images/github.svg" alt="">
-            <img src="images/twitter.svg" alt="">
-          </li>
-        </ul>
+        <img
+          src="images/happy-black-person.png"
+          alt="person"
+          class="hidden md:block w-[550px]"
+        />
       </div>
+    </div>
 
-    </nav>
-	</header>
-
-</body>
-<html>
+    <script>
+      var nav = document.getElementById("nav");
+      var menuBtn = document.getElementById("menu-btn");
+      menuBtn = addEventListener("click", function () {
+        nav.classList.toggle("-left-[400px]");
+      });
+    </script>
+  </body>
+</html>
